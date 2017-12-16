@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Auth0Lock from 'auth0-lock';
-import Header from './Components/Header';
 import Github from './Github';
+import Header from './Components/Header';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 
@@ -46,8 +46,6 @@ class App extends Component {
       this.setState({
         idToken: localStorage.getItem('idToken'),
         profile: JSON.stringify(localStorage.getItem('profile'))
-      }, () => {
-        console.log(this.state);
       });
     }
   }
